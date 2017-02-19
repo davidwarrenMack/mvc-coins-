@@ -1,0 +1,29 @@
+table {
+   width: 1200px;}
+
+th, td {
+   padding: 10px 15px 15px 15px;}
+
+th{
+   text-transform: uppercase;
+   letter-spacing: 0.1em;
+   font-size: 90%;
+   border-bottom: 2px solid #999;
+   text-align: left;
+   opacity: 0.5;
+               filter: alpha(opacity=50);}
+
+body {
+opacity: 0.5;
+                 filter: alpha(opacity=50);
+    background-color: ;
+        opacity: 0.5;
+                 filter: alpha(opacity=50);
+}
+
+
+
+   tr:nth-child(odd)(even){background-color:#70e1f5 ;
+   opacity: 0.5;
+      filter: alpha(opacity=50);}
+

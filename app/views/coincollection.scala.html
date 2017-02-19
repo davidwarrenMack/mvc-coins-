@@ -1,0 +1,52 @@
+@(coincollection : CoinCollection)
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type ="text/css" href="@routes.Assets.at("stylesheets/main.css")"/>
+</head>
+<body>
+
+<h1> List Of Coins</h1>
+
+<table>
+    <tr>
+    <td>Coin collection face value: @coincollection.getFaceValue</td>
+    </tr>
+    <tr>
+    <td>Coin collection collectible value: @coincollection.getCollectibleValue</td>
+    </tr>
+</table>
+<br>
+penny year, face, and collectible value : @for(coincollection<- coincollection.getPennies){<br>
+    ~@coincollection.getPennyYear,
+    @coincollection.getPenniesFaceValue,
+    @coincollection.getPenniesCollectibleValue
+    }
+<br>
+<br>
+    nickel year, face, and collectible value : @for(coincollection<- coincollection.getNickels){<br>
+    ~@coincollection.getNickelYear,
+    @coincollection.getNickelsFaceValue,
+    @coincollection.getNickelsCollectibleValue
+}
+<br>
+<br>
+    nickel year, face, and collectible value : @for(coincollection<- coincollection.getDimes){<br>
+    ~@coincollection.getDimeYear,
+    @coincollection.getDimesFaceValue,
+    @coincollection.getDimesCollectibleValue
+}
+<br>
+<br>
+    quarter year, face, and collectible value : @for(coincollection<- coincollection.getQuarters){<br>
+    ~@coincollection.getQuarterYear,
+    @coincollection.getQuartersFaceValue,
+    @coincollection.getQuartersCollectibleValue
+}
+<br>
+
+</body>
+<a href="url"><iframe width="1200" height="500" src="https://www.youtube.com/embed/Sagg08DrO5U?ecver=1" frameborder="0" allowfullscreen></iframe></a>
+</html>
